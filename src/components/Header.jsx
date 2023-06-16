@@ -25,7 +25,7 @@ function Header(props) {
               </a>
             </li>
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link fs-3 textgr3" href="./projects">
+              <a className="nav-link fs-3 textgr3" href="./#/projects">
                 Projects
               </a>
             </li>

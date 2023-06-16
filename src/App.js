@@ -8,7 +8,7 @@ import Calculator from "./components/Calculator";
 
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "./pages/ProjectsPage";
 // import UsersTable from "./components/UsersTable";
 // import WordCounter from "./components/WordCounter";
@@ -27,19 +27,19 @@ function App() {
     {
       title: "Responsive Paragraph Word Counter",
       description: "A responsive paragraph word counter made using ReactJS that counts the number of words in a paragraph.",
-      link: "./projects/word-counter",
+      link: "./#/projects/word-counter",
       image: "https://i.ibb.co/0jJQY5q/word-counter.png"
     },
     {
       title: "Calculator",
       description: "A calculator made using ReactJS that performs basic arithmetic operations.",
-      link: "./projects/calculator",
+      link: "./#/projects/calculator",
       image: "https://i.ibb.co/0jJQY5q/word-counter.png"
     },
     {
       title: "Color Picker",
       description: "A color picker made using ReactJS that allows the user to pick a color from a color palette and make the button change its color.",
-      link: "./projects/color-picker",
+      link: "./#/projects/color-picker",
       image: "https://i.ibb.co/0jJQY5q/word-counter.png"
     }
   ]
@@ -47,7 +47,7 @@ function App() {
   return (
     <div className="bg-light">
       <Header dName={name} />
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route
             path="/"
@@ -67,7 +67,7 @@ function App() {
           />
           <Route path="/projects/calculator" element={<Calculator />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
