@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c83ab444.css",
-    "main.js": "/portfolio/static/js/main.2da78085.js",
+    "main.css": "/portfolio/static/css/main.7782e0fa.css",
+    "main.js": "/portfolio/static/js/main.6cdd3b97.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/background-image.jpg": "/portfolio/static/media/background-image.bf2ff2117d6de8d6cb9a.jpg",
+    "static/media/users-table.png": "/portfolio/static/media/users-table.17c4ab6a3860bbfce77b.png",
+    "static/media/word-counter.png": "/portfolio/static/media/word-counter.bf658f8c8d3da761461f.png",
+    "static/media/age-calculator.png": "/portfolio/static/media/age-calculator.09d27150a18391e872b1.png",
     "index.html": "/portfolio/index.html",
-    "main.c83ab444.css.map": "/portfolio/static/css/main.c83ab444.css.map",
-    "main.2da78085.js.map": "/portfolio/static/js/main.2da78085.js.map",
+    "static/media/logo.svg": "/portfolio/static/media/logo.3afec8f1c8325a24ed97bdc083631af5.svg",
+    "main.7782e0fa.css.map": "/portfolio/static/css/main.7782e0fa.css.map",
+    "main.6cdd3b97.js.map": "/portfolio/static/js/main.6cdd3b97.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c83ab444.css",
-    "static/js/main.2da78085.js"
+    "static/css/main.7782e0fa.css",
+    "static/js/main.6cdd3b97.js"
   ]
 }
