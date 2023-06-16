@@ -2,7 +2,9 @@ function Header(props) {
   return (
     <div className="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient shadow shadow-lg sticky-top py-2 px-4">
       <div className="container-fluid">
-        <div className="nav-brand display-5 textgr3 px-4">{props.dName}</div>
+        <a href="./" style={{textDecoration: 'none'}}>
+          <div className="nav-brand display-5 textgr3 px-4">{props.dName}</div>
+        </a>
         <button
           className="navbar-toggler "
           type="button"
@@ -18,12 +20,12 @@ function Header(props) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav justify-content-end ms-auto">
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link active fs-3 textgr3" href="#about">
+              <a className="nav-link fs-3 textgr3" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link fs-3 textgr3" href="#projects">
+              <a className="nav-link fs-3 textgr3" href="./projects">
                 Projects
               </a>
             </li>
