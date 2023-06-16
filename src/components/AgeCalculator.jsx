@@ -21,7 +21,7 @@ const AgeCalculator = () => {
   };
 
   return (
-    <div className="text-center border shadow p-4" style={{ width: '350px'}}>
+    <div className="text-center border shadow p-4 m-5 mx-auto" style={{ width: '350px'}}>
       <h1>Age Calculator</h1>
       <div className="fs-5 m-2">Enter your date of birth:</div>
       <div className="w-100">

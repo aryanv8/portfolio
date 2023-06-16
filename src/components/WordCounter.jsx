@@ -12,11 +12,11 @@ function WordCounter() {
   };
 
   return (
-    <div className="shadow bg-light p-2 m-5" style={{ maxWidth: "650px" }}>
+    <div className="bg-light text-dark shadow p-2" style={{ maxWidth: "650px", marginTop: '200px', marginLeft: '100px' }}>
       <h1 className="text-center">Responsive Paragraph Word Counter</h1>
       <div className="text-center">
         <textarea
-          className="fs-4 p-2"
+          className="fs-4 p-2 bg-light text-dark shadow"
           name="inp"
           id="inp"
           cols="50"

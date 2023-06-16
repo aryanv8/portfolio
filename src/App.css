@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-body {
-  color-scheme: dark;
-}
 
 .App-logo {
   height: 40vmin;
@@ -90,6 +87,17 @@ body {
   text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.35);
 }
 
+.textgr4 {
+  font-family: "Marck Script", cursive;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.35);
+  background: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
 .hide-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -107,4 +115,31 @@ body {
   background-size: cover;
   background-blend-mode:multiply;
   background-color: #282c34;
+}
+
+.colors-list-item {
+  width: 70px;
+  height: 70px;
+}
+
+.colors-list-item:hover {
+  box-shadow: -4px 4px 5px 4px #151515;
+  border: solid 1px #151515;
+}
+
+.bgimg2 {
+  /* make the background image so that it doesn't move on scroll */
+  background-attachment: fixed;
+  background-image: url("./logo.svg");
+  background-repeat: no-repeat;
+  background-position:center;
+  /* make the size to cover half of the height */
+  background-size: 40%;
+  background-blend-mode:multiply;
+  background-color: #282c34;
+
+}
+
+.bs-bg-opacity {
+  --bs-bg-opacity: .5;
 }

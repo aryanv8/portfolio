@@ -5,38 +5,38 @@ function HomePage(props) {
       style={{ width: "100vw", height: "100vh" }}
     >
       <div
-        className="display-1 bg-dark text-align-center textgr3"
+        className="display-1 bg-dark text-align-center textgr4"
         style={{ paddingTop: "100px" }}
       >
         Portfolio
       </div>
 
       <div
-        className="display-1 bg-dark text-align-center textgr3"
+        className="display-1 bg-dark text-align-center textgr4"
         style={{ paddingTop: "100px" }}
       >
         {props.dName}
       </div>
       <div
-        className="display-6 bg-dark text-align-center textgr3"
+        className="display-6 bg-dark text-align-center textgr4"
         style={{ paddingTop: "100px" }}
       >
         {props.dDegree}
       </div>
       <div
-        className="display-6 bg-dark text-align-center textgr3"
+        className="display-6 bg-dark text-align-center textgr4"
         style={{ paddingTop: "10px" }}
       >
         {props.dCollege}
       </div>
       <div
-        className="display-6 bg-dark text-align-center textgr3"
+        className="display-6 bg-dark text-align-center textgr4"
         style={{ paddingTop: "10px" }}
       >
         {props.dBranch}
       </div>
       <div
-        className="display-6 bg-dark text-align-center textgr3"
+        className="display-6 bg-dark text-align-center textgr4"
         style={{ paddingTop: "10px" }}
       >
         {props.dYear}

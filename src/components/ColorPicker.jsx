@@ -17,7 +17,7 @@ const ColorPicker = ({ colors }) => {
     <div className="m-5">
       <button
         onClick={handleColorButtonClick}
-        className="btn shadow shadow-lg fs-5"
+        className="btn shadow text-dark shadow-lg fs-5"
         style={{ backgroundColor: selectedColor || "white" }}
       >
         Pick a color
@@ -29,7 +29,7 @@ const ColorPicker = ({ colors }) => {
         >
           {colors.map((color, index) => (
             <li
-              className="my-1"
+              className="my-1 colors-list-item"
               key={index}
               onClick={() => handleColorSelection(color)}
               style={{ backgroundColor: color, width: "70px", height: "70px" }}

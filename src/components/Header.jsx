@@ -1,12 +1,23 @@
+import mainLogo from "../logo.svg";
 function Header(props) {
   return (
     <div className="navbar navbar-expand-lg navbar-dark bg-dark bg-gradient shadow shadow-lg sticky-top py-2 px-4">
       <div className="container-fluid">
-        <a href="./" style={{textDecoration: 'none'}}>
-          <div className="nav-brand display-5 textgr3 px-4">{props.dName}</div>
+        <a
+          className="navbar-brand"
+          href="./"
+          style={{ textDecoration: "none" }}
+        >
+          <img
+            className="d-inline-block align-text-top"
+            src={mainLogo}
+            alt="Unable To Load"
+            style={{ width: "40px" }}
+          />
+          <div className="display-6 textgr4 d-inline-block align-text-top px-4">{props.dName}</div>
         </a>
         <button
-          className="navbar-toggler "
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -14,23 +25,23 @@ function Header(props) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa-solid fa-bars-staggered"></i>
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav justify-content-end ms-auto">
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link fs-3 textgr3" href="#about">
+              <a className="nav-link fs-3 textgr4" href="#about">
                 About
               </a>
             </li>
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link fs-3 textgr3" href="./#/projects">
+              <a className="nav-link fs-3 textgr4" href="./#/projects">
                 Projects
               </a>
             </li>
             <li className="nav-item px-4" style={{ maxWidth: "170px" }}>
-              <a className="nav-link fs-3 textgr3" href="#contact">
+              <a className="nav-link fs-3 textgr4" href="#contact">
                 Contact
               </a>
             </li>

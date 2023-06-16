@@ -56,7 +56,7 @@ function Calculator(props) {
 
   return (
     <div
-      className="container text-end shadow"
+      className="container text-end shadow my-5"
       style={{
         width: "400px",
         backgroundColor: "rgb(0, 0, 0)",
