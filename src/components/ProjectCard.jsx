@@ -5,7 +5,7 @@ export function ProjectsCard(props) {
   const [shadow, setShadow] = useState("");
   return (
     <div
-      className={`card m-3 col bg-body-tertiary bs-bg-opacity text-light ${shadow}`}
+      className={`card m-3 col-sm-6 col-md-4 col-12 bg-body-tertiary bs-bg-opacity w-sm-100 text-light ${shadow}`}
       onMouseEnter={() => setShadow("shadow shadow-lg")}
       onMouseLeave={() => setShadow("")}
       // style={{ backgroundColor: "rgb(43, 48, 53)" }}
@@ -13,6 +13,7 @@ export function ProjectsCard(props) {
       style={{
         // backgroundColor: "rgb(52, 58, 64)",
         maxWidth: "25rem",
+        minWidth: "250px",
         height: "37rem",
         opacity: ".7",
         // --bs-bg-opacity: .5; write its alternative

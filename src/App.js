@@ -2,19 +2,25 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-// import AgeCalculator from "./components/AgeCalculator";
-import Calculator from "./components/Calculator";
-// import ColorPicker from "./components/ColorPicker";
+
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
+
+// pages import
 import HomePage from "./pages/HomePage";
-import { HashRouter, Routes, Route } from "react-router-dom";
 import ProjectsPage from "./pages/ProjectsPage";
+import ContactPage from "./pages/ContactPage";
+import ResumePage from "./pages/ResumePage";
+
+// components import
+import Calculator from "./components/Calculator";
 import UsersTable from "./components/UsersTable";
 import WordCounter from "./components/WordCounter";
 import ColorPicker from "./components/ColorPicker";
 import AgeCalculator from "./components/AgeCalculator";
 
+// images import
 import CalculatorImage from "./images/calculator.png";
 import WordCounterImage from "./images/word-counter.png";
 import ColorPickerImage from "./images/color-picker.png";
@@ -89,16 +95,37 @@ function App() {
               />
             }
           />
+          {/* Route to pages */}
+          <Route path="/resume" element={<ResumePage />} />
           <Route
             path="/projects"
             element={<ProjectsPage projects={projects} />}
           />
+          <Route path="/contact" element={<ContactPage />} />
+
+          {/* Routes to projects */}
           <Route path="/projects/calculator" element={<Calculator />} />
           <Route path="/projects/age-calculator" element={<AgeCalculator />} />
           <Route
             path="/projects/color-picker"
             element={
-              <ColorPicker colors={["red", "blue", "aqua", "green", "teal", "maroon", "pink", "darkblue", "orange", "skyblue", "yellow", "purple", "lime"]} />
+              <ColorPicker
+                colors={[
+                  "red",
+                  "blue",
+                  "aqua",
+                  "green",
+                  "teal",
+                  "maroon",
+                  "pink",
+                  "darkblue",
+                  "orange",
+                  "skyblue",
+                  "yellow",
+                  "purple",
+                  "lime",
+                ]}
+              />
             }
           />
           <Route path="/projects/users-table" element={<UsersTable />} />

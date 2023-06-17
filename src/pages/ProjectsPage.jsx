@@ -6,11 +6,11 @@ function ProjectsPage(props) {
   return (
     <div
       className="py-3 text-center bgimg2"
-      style={{ backgroundColor: "rgb(33, 37, 41)", minHeight: "100vh" }}
+      style={{ backgroundColor: "rgb(33, 37, 41)", minHeight: "100vh", width: "100%" }}
     >
       <h1 className="display-1 textgr3 my-5">Projects</h1>
-      <div className="container">
-        <div className="row row-cols-auto">
+      <div className="container w-100">
+        <div className="row row-cols-auto w-100">
           {projects.map((project, index) => {
             return <ProjectsCard project={project} key={index} />;
           })}
