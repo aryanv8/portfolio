@@ -31,8 +31,9 @@ export function ProjectsCard(props) {
       </div>
       <div className="card-footer border-0 mx-0">
         <button
+          disabled={project.disabledButton}
           className="btn btn-outline-primary w-100 mx-0"
-          onClick={() => window.open(project.link, '_self')}
+          onClick={() => window.open(project.link, "_self")}
         >
           View Project
         </button>
@@ -40,3 +41,13 @@ export function ProjectsCard(props) {
     </div>
   );
 }
+
+ProjectsCard.defaultProps = {
+  project: {
+    title: "Project 1",
+    description: "This is a description of project 1",
+    image: "https://via.placeholder.com/150",
+    link: "./projects/calculator",
+    disabledButton: false,
+  },
+};

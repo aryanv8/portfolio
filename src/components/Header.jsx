@@ -14,7 +14,10 @@ function Header(props) {
             alt="Unable To Load"
             style={{ width: "8vw", maxWidth: "40px" }}
           />
-          <div className="display-6 textgr4 d-inline-block align-text-top ps-2" style={{letterSpacing: '-2px', wordSpacing:'-10px'}}>
+          <div
+            className="display-6 textgr4 d-inline-block align-text-top ps-2"
+            style={{ letterSpacing: "-2px", wordSpacing: "-3px" }}
+          >
             {props.dName}
           </div>
         </a>

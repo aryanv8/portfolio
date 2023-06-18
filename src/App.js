@@ -26,6 +26,7 @@ import WordCounterImage from "./images/word-counter.png";
 import ColorPickerImage from "./images/color-picker.png";
 import UsersTableImage from "./images/users-table.png";
 import AgeCalculatorImage from "./images/age-calculator.png";
+import PortfolioImage from "./images/portfolio.png";
 
 // import UsersTable from "./components/UsersTable";
 // import WordCounter from "./components/WordCounter";
@@ -47,6 +48,7 @@ function App() {
         "A responsive paragraph word counter made using ReactJS that counts the number of words in a paragraph.",
       link: "./#/projects/word-counter",
       image: WordCounterImage,
+      disabledButton: false
     },
     {
       title: "Calculator",
@@ -54,6 +56,7 @@ function App() {
         "A calculator made using ReactJS that performs basic arithmetic operations.",
       link: "./#/projects/calculator",
       image: CalculatorImage,
+      disabledButton: false
     },
     {
       title: "Color Picker",
@@ -61,6 +64,7 @@ function App() {
         "A color picker made using ReactJS that allows the user to pick a color from a color palette and make the button change its color.",
       link: "./#/projects/color-picker",
       image: ColorPickerImage,
+      disabledButton: false
     },
     {
       title: "Users Table from API",
@@ -68,6 +72,7 @@ function App() {
         "A table made using ReactJS that fetches data from an API and displays it in a table.",
       link: "./#/projects/users-table",
       image: UsersTableImage,
+      disabledButton: false
     },
     {
       title: "Age Calculator",
@@ -75,7 +80,16 @@ function App() {
         "An age calculator made using ReactJS that calculates the age of a person from the date of birth.",
       link: "./#/projects/age-calculator",
       image: AgeCalculatorImage,
+      disabledButton: false
     },
+    {
+      title: "Portfolio Website",
+      description:
+        "A portfolio website made using ReactJS that displays my resume, projects, and contact details.",
+      link: "./",
+      image: PortfolioImage,
+      disabledButton: false
+    }
   ];
 
   return (
